@@ -5,7 +5,7 @@ import React, { useCallback } from "react";
 const ParticlesContainer = () => {
   const particleinit = useCallback(async (engine) => {
     await loadFull(engine);
-  }, []);
+  }, [loadFull]);
   const particleLoaded = useCallback(async () => {}, {});
   return (
     <Particles
