@@ -15,6 +15,7 @@ const Bulbs = () => {
         width={200}
         height={200}
         className="w-full h-full"
+        alt=""
       />
     </motion.div>
   );
