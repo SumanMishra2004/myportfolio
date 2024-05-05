@@ -1,46 +1,37 @@
-import React, { useRef, useState } from "react";
+import React from "react";
+import Bulbs from "../../components/Bulb";
+import Circles from "../../components/Circles";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Typewriter from "typewriter-effect";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
-// import './styles.css';
-
-// import required modules
 import { EffectCards } from "swiper";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-import Circles from "../../components/Circles";
 
-import Bulbs from "../../components/Bulb";
-export default function Works() {
+const index = () => {
+  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
+`;
   return (
-    <>
-      <div className="h-full w-full md:w-[100%] bg-primary/30 lg:pr-[10rem] flex items-center md:justify-around flex-col md:flex-row overflow-auto pt-[9rem] md:pt-0 justify-start bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat bg-blend-color-dodge -z-[10] ">
-        <Bulbs />
-
-       
-        <div className=" h-min md:h-full w-full md:w-[50%]   flex items-center justify-center ">
-          <motion.h2
-            className=" text-[25px] leading-tight md:text-[45px] md:leading-[1.3] mb-4 font-semibold pb-[3rem] md:pb-0 z-10 md:pl-20 px-3"
-            variants={fadeIn("down", 1)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-          >
-            <span className="md:text-[50px] text-[30px]"> E</span>
-            xplore the depths of my project showcase, where innovation meets
-            execution.
-          </motion.h2>
+    <div className="w-full h-full z-10 flex items-center bg-black/60  ">
+      <Bulbs />
+      <Circles />
+      <div className=" h-[75vh]  w-[100vw] mt-[5rem] lg:mt-0 flex flex-col md:flex-row justify-around items-center md:px-[7rem] px-0 absolute z-20">
+        <div className="w-[95vw] md:w-[45%] h-[95%] hidden md:flex items-center justify-center min-w-[40%]">
+          <span className="text-[51px] font-bold uppercase text-shadow">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString('Wellcome the world of Magic ! ')
+                .start()
+                
+                
+            }}
+          />
+          </span>
+          
         </div>
-        <motion.div
-        variants={fadeIn("up", 0.8)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        >
+        <div>
           <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -57,8 +48,10 @@ export default function Works() {
             <SwiperSlide>Slide 8</SwiperSlide>
             <SwiperSlide>Slide 9</SwiperSlide>
           </Swiper>
-        </motion.div>
+        </div>
       </div>
-    </>
+    </div>
   );
-}
+};
+
+export default index;

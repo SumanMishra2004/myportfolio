@@ -10,7 +10,10 @@
   .swiper-pagination-bullet {
   background-color: #f13024;
 }
-
+.text-shadow{
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  color: #FFFFFF;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
@@ -49,9 +52,15 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
   .swiper {
-    @apply w-[360px] h-[460px] max-w-[90vw]   ;
+    @apply w-[360px] h-[350px] max-w-[80vw]  md:h-[420px] ;
+  }
+  .mycustomscrollbar{
+    ::-webkit-scrollbar{
+      width: 0;
+    }
   }
 }
+
 
 /* .swiper {
   width: 440px;
