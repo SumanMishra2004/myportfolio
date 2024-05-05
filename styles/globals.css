@@ -48,15 +48,16 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
-  
+  .swiper {
+    @apply w-[360px] h-[460px] max-w-[90vw]   ;
+  }
 }
 
-
-.swiper {
-  width: 340px;
-  height: 420px;
+/* .swiper {
+  width: 440px;
+  height: 600px;
   max-width: 90vw;
-}
+} */
 
 .swiper-slide {
   display: flex;

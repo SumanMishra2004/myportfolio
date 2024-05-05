@@ -21,7 +21,7 @@ export default function Works() {
       <div className="h-full w-full md:w-[100%] bg-primary/30 lg:pr-[10rem] flex items-center md:justify-around flex-col md:flex-row overflow-auto pt-[9rem] md:pt-0 justify-start bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat bg-blend-color-dodge -z-[10] ">
         <Bulbs />
 
-        <Circles />
+       
         <div className=" h-min md:h-full w-full md:w-[50%]   flex items-center justify-center ">
           <motion.h2
             className=" text-[25px] leading-tight md:text-[45px] md:leading-[1.3] mb-4 font-semibold pb-[3rem] md:pb-0 z-10 md:pl-20 px-3"
