@@ -1,17 +1,19 @@
 import { Particles } from "react-tsparticles";
-
 import { loadFull } from "tsparticles";
 import React, { useCallback } from "react";
+
 const ParticlesContainer = () => {
-  const particleinit = useCallback(async (engine) => {
+  const particleInit = useCallback(async (engine) => {
     await loadFull(engine);
-  }, [loadFull]);
-  const particleLoaded = useCallback(async () => {}, {});
+  }, []); // Removed unnecessary dependency 'loadFull'
+
+  const particleLoaded = useCallback(async () => {}, []); // Removed unnecessary dependency
+
   return (
     <Particles
       className="w-full h-full absolute translate-z-o"
       id="tsparticles"
-      init={particleinit}
+      init={particleInit}
       loaded={particleLoaded}
       options={{
         fullScreen: { enable: false },
