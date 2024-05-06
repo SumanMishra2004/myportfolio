@@ -6,7 +6,7 @@ const Bulbs = () => {
     <div className="w-full h-full flex justify-center items-center">
       <motion.div
         className="w-[450px] h-auto  mix-blend-hard-light animate-pulse duration-1000 z-10 "
-        variants={fadeIn("up", 0.3)}
+        variants={fadeIn("right", 0.3)}
         initial="hidden"
         animate="show"
         exit="hidden"
