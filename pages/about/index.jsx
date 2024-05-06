@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from 'react'
 
 // icons
 import {
@@ -17,10 +17,7 @@ import {
   SiMongodb,
   SiCanva
 } from "react-icons/si";
-import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
-import CountUp from "react-countup";
-//  data
+
 const aboutData = [
   {
     title: "skills",
@@ -79,16 +76,10 @@ const aboutData = [
     ],
   },
 ];
-
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-const About = () => {
- 
+const index = () => {
   return (
-   <>
-   index
-   </>
-  );
-};
+    <div>index</div>
+  )
+}
 
-export default About;
+export default index
